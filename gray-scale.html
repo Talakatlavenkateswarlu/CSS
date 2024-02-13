@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(9, 198, 66);
+        }
+        .grey-scale{
+            
+            width: 300px;
+            height: 450px;
+            margin: 50px auto;
+            box-shadow: 0 5px 10px black;
+            border-radius: 10px;
+            overflow: hidden;
+            
+
+        }
+        .grey-scale img{
+            width: inherit;
+            height: inherit;
+            border-radius: 10px;
+            transition: all 0.5s;
+            filter: grayscale(100%);
+            
+        }
+
+        .grey-scale:hover img{
+            transform: scale(1.2,1.2);
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body>
+    <div class="grey-scale">
+        <img src="grey_scale.jpg" alt="">
+    </div>
+    
+</body>
+</html>
